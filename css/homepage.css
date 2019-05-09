@@ -9,3 +9,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.carousel {
+  width:640px;
+  height:360px;
+}

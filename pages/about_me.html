@@ -10,7 +10,7 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
             crossorigin="anonymous"></script>
             
-        <link rel="stylesheet" href="bg_image.css">
+        <link rel="stylesheet" href="../css/aboutme.css">
     </head>
 
     <body>
@@ -22,25 +22,41 @@
 
 
         <!-- Carousel for about me slides -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="mx-auto carousel slide" data-ride="carousel" data-interval="false" style="margin-top: 20px">
 
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
 
             <!-- Carousel slides -->
             <div class="carousel-inner">
+
+                <!-- First slide (Childhood) -->
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://placeimg.com/1080/500/animals" alt="First slide">
+                    <img class="img-fluid, d-block w-100" width="940px" height="500px" src="../images/childhood_aboutme_image.jpg" alt="Childhood slide">
+                    <h1>Childhood</h1>
                 </div>
+
+                <!-- Second slide (Education) -->
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://placeimg.com/1080/500/arch" alt="Second slide">
+                    <img class="img-fluid, d-block w-100" width="940px" height="500px" src="../images/education_aboutme_image.jpg" alt="Education slide">
+                    <h1>Education</h1>
                 </div>
+
+                <!-- Third slide (Technical Experience) -->
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://placeimg.com/1080/500/nature" alt="Third slide">
+                    <img class="img-fluid, d-block w-100" width="940px" height="500px" src="../images/technicalexp_aboutme_image.jpg" alt="Technical Experience slide">
+                    <h1>Experience</h1>
+                </div>
+
+                <!-- Fourth slide (Interests: sports, gaming) -->
+                <div class="carousel-item">
+                    <img class="img-fluid, d-block w-100" width="940px" height="500px" src="../images/interests_aboutme_image.jpg" alt="Interests slide">
+                    <h1>Interests</h1>
                 </div>
             </div>
 
