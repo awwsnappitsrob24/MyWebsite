@@ -2,15 +2,11 @@ body {
   height: 100%;
 
   /* The image used */
-  background-image: url("../images/homepage_bgimage.jpg");
+  /* background-image: url("../images/homepage_bgimage.jpg"); */
+  background-image: url("../images/aboutme_bg_image.jpg");
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.carousel {
-  width:640px;
-  height:360px;
 }

@@ -1,8 +1,28 @@
-.carousel {
-    width:940px;
-    height:500px;
+body {
+    height: 100%;
+
+    /* Background image for the "About Me" page */
+    background-image: url("../images/aboutme_bg_image.jpg");
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
 }
 
-p {
+.carousel {
+    width: 750px;
+    height: 400px;
+}
+
+h3, p {
+    color: black;
+}
+
+p, h6.tab-space{
     text-indent:50px;
 }
+
+h6.tab-space2 {
+    text-indent:100px;
+}
+
