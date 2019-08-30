@@ -18,11 +18,11 @@ h3, p {
     color: black;
 }
 
-p, h6.tab-space{
+p {
     text-indent:50px;
 }
 
-h6.tab-space2 {
-    text-indent:100px;
+td {
+    text-align: center;
+    color: black;
 }
-
