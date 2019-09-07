@@ -1,18 +1,3 @@
-body {
-  width: auto ;
-  max-width: 100% ;
-  height: auto ;
-
-  /* The image used */
-  /* background-image: url("../images/homepage_bgimage.jpg"); */
-  background-image: url("../images/homepage_bg_image.jpg");
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .fa {
   padding: 20px;
   width: 55px;
@@ -38,15 +23,5 @@ body {
 
 .fa-github {
   background: #a4c639;
-  color: white;
-}
-
-.fa-instagram {
-  background: #ea4c89;
-  color: white;
-}
-
-.fa-reddit {
-  background: #ff5700;
   color: white;
 }
