@@ -1,3 +1,20 @@
+body {
+  background-image: url('../images/homepage_bg_image.jpg');
+
+  /* Make it responsive*/
+  max-width: 100%;
+  height: auto;
+
+  /* Center the background image */
+  background-position: center;
+
+  /* Scale and zoom in the image */
+  background-size: cover;
+
+  /* Repeat if not covered whole */
+  background-repeat: repeat;
+}
+
 .fa {
   padding: 20px;
   width: 55px;
