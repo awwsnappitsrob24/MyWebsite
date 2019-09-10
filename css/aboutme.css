@@ -1,52 +1,47 @@
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
-    height: 100%
-  }
   
-  .bgimg {
-    /* Background image */
-    background-image: url('../images/underconstruction_bgimage.jpg');
-    /* Full-screen */
-    height: 100%;
-    /* Center the background image */
-    background-position: center;
-    /* Scale and zoom in the image */
-    background-size: cover;
-    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-    position: relative;
-    /* Add a white text color to all elements inside the .bgimg container */
-    color: white;
-    /* Add a font */
-    font-family: "Courier New", Courier, monospace;
-    /* Set the font-size to 25 pixels */
-    font-size: 25px;
+  color: white;
+  line-height: 1.8;
+
+  background-image: url('../images/aboutme_bg_image.jpg');
+
+  /* Make it responsive*/
+  max-width: 100%;
+  height: auto;
+
+  /* Center the background image */
+  background-position: center;
+
+  /* Scale and zoom in the image */
+  background-size: cover;
+
+  /* Repeat if not covered whole */
+  background-repeat: repeat;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('../images/banninghs_logo.jpg');
+  min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
   }
-  
-  /* Position text in the top-left corner */
-  .topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
-  }
-  
-  /* Position text in the bottom-left corner */
-  .bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-  }
-  
-  /* Position text in the middle */
-  .middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  /* Style the <hr> element */
-  hr {
-    margin: auto;
-    width: 40%;
-  }
+}
