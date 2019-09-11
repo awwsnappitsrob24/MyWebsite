@@ -1,0 +1,20 @@
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html, .bgimg {
+  line-height: 1.8;
+
+  background-image: url('../images/homepage_bg_image.jpg');
+
+  /* Make it responsive*/
+  max-width: 100%;
+  height: auto;
+
+  /* Center the background image */
+  background-position: center;
+
+  /* Scale and zoom in the image */
+  background-size: cover;
+
+  /* Repeat if not covered whole */
+  background-repeat: repeat;
+}

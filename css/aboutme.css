@@ -1,11 +1,9 @@
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
-  
-  color: white;
   line-height: 1.8;
 
-  background-image: url('../images/aboutme_bg_image.jpg');
+  background-image: url('../images/homepage_bg_image.jpg');
 
   /* Make it responsive*/
   max-width: 100%;
@@ -31,8 +29,26 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('../images/banninghs_logo.jpg');
+  background-image: url('../images/childhood_aboutme_image.jpg');
   min-height: 100%;
+}
+
+/* Second image (Education) */
+.bgimg-2 {
+  background-image: url("../images/education_aboutme_image.jpg");
+  min-height: 450px;
+}
+
+/* Third image (Technical Experience) */
+.bgimg-3 {
+  background-image: url("../images/technicalexp_aboutme_image.jpg");
+  min-height: 450px;
+}
+
+/* Fourth image (Interests) */
+.bgimg-4 {
+  background-image: url("../images/interests_aboutme_image.jpg");
+  min-height: 450px;
 }
 
 .w3-wide {letter-spacing: 10px;}
