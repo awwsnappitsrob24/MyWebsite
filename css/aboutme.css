@@ -31,24 +31,40 @@ body, html {
 .bgimg-1 {
   background-image: url('../images/childhood_aboutme_image.jpg');
   min-height: 100%;
+
+  /* Make it responsive*/
+  max-width: 100%;
+  height: auto;
 }
 
 /* Second image (Education) */
 .bgimg-2 {
   background-image: url("../images/education_aboutme_image.jpg");
   min-height: 450px;
+
+  /* Make it responsive*/
+  max-width: 100%;
+  height: auto;
 }
 
 /* Third image (Technical Experience) */
 .bgimg-3 {
   background-image: url("../images/technicalexp_aboutme_image.jpg");
   min-height: 450px;
+
+  /* Make it responsive*/
+  max-width: 100%;
+  height: auto;
 }
 
 /* Fourth image (Interests) */
 .bgimg-4 {
   background-image: url("../images/interests_aboutme_image.jpg");
   min-height: 450px;
+
+  /* Make it responsive*/
+  max-width: 100%;
+  height: auto;
 }
 
 .w3-wide {letter-spacing: 10px;}
