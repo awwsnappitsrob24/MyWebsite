@@ -79,13 +79,13 @@ body, html {
 }
 
 .carousel {
-  width: 550px;
-  height: 550px;
+  width: 600px;
+  height: auto;
 }
 
 .carousel-inner {
-  width: 550px;
-  height: 100vh;
+  width: 600px;
+  height: auto;
 }
 
 
