@@ -18,3 +18,7 @@ body, html, .bgimg {
   /* Repeat if not covered whole */
   background-repeat: repeat;
 }
+
+footer {
+  position: absolute-bottom;
+}
