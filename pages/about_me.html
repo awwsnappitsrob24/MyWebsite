@@ -1,90 +1,109 @@
 <!DOCTYPE html>
-<html> 
-    <head>
-        <meta charset="UTF-8">
-        <title>Rob's Site</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-            crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
-            crossorigin="anonymous"></script>
-            
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../css/aboutme.css">
-    </head>
+<html>
 
-    <body>
-        <!-- Navbar (sit on top) -->
-        <div class="w3-top">
-            <div class="w3-bar" id="myNavbar">
-                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-                <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> PERSONAL</a>
-                <a href="#education" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> EDUCATION</a>
-                <a href="#experience" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-laptop"></i> TECHNICAL EXPERIENCE</a>
-                <a href="#interests" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> INTERESTS</a>
-            </div>
-      
-            <!-- Navbar on small screens -->
-            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-                <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">PERSONAL</a>
-                <a href="#education" class="w3-bar-item w3-button" onclick="toggleFunction()">EDUCATION</a>
-                <a href="#experience" class="w3-bar-item w3-button" onclick="toggleFunction()"> TECHNICAL EXPERIENCE</a>
-                <a href="#interests" class="w3-bar-item w3-button" onclick="toggleFunction()"> INTERESTS</a>
-            </div>
-        </div>
-      
+<head>
+    <meta charset="UTF-8">
+    <title>Rob's Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-        <!-- First Parallax Image with Logo Text -->
-        <div class="bgimg-1 w3-display-container w3-opacity-min" id="about">
-            <div class="w3-display-middle" style="white-space:nowrap;">
-                <span class="img-fluid w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ABOUT ME</span>
-            </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/aboutme.css">
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> PERSONAL</a>
+            <a href="#education" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> EDUCATION</a>
+            <a href="#experience" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-laptop"></i> TECHNICAL
+                EXPERIENCE</a>
+            <a href="#interests" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> INTERESTS</a>
         </div>
 
-      <!-- Container (About Section) -->
-        <div class="w3-content w3-container w3-padding-64" id="about">
-            <br>
-            <p><b>I have no idea what you were doing before you stumbled upon my website. Either way, I am thankful that you have. In case, you were wondering,
-                I'm the guy in the far right with the glasses and all kinds of swag. Now, before you go on any further, I would like to inform you that everything 
-                that you will <i>*hopefully*</i> read from here on out is the truth and nothing but the truth about myself. Promise! I am not well-versed in HTML, 
-                CSS, or JavaScript in any way, shape or form. So if you are a website critic or a critic of any kind, please feel free to reach out to me on my 
-                contact information on the homepage for some constructive criticism about my site. It will be much appreciated. With that said, I am impressed that 
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">PERSONAL</a>
+            <a href="#education" class="w3-bar-item w3-button" onclick="toggleFunction()">EDUCATION</a>
+            <a href="#experience" class="w3-bar-item w3-button" onclick="toggleFunction()"> TECHNICAL EXPERIENCE</a>
+            <a href="#interests" class="w3-bar-item w3-button" onclick="toggleFunction()"> INTERESTS</a>
+        </div>
+    </div>
+
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="about">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="img-fluid w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ABOUT
+                ME</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <br>
+        <p><b>I have no idea what you were doing before you stumbled upon my website. Either way, I am thankful that you
+                have. In case, you were wondering,
+                I'm the guy in the far right with the glasses and all kinds of swag. Now, before you go on any further,
+                I would like to inform you that everything
+                that you will <i>*hopefully*</i> read from here on out is the truth and nothing but the truth about
+                myself. Promise! I am not well-versed in HTML,
+                CSS, or JavaScript in any way, shape or form. So if you are a website critic or a critic of any kind,
+                please feel free to reach out to me on my
+                contact information on the homepage for some constructive criticism about my site. It will be much
+                appreciated. With that said, I am impressed that
                 you have made it this far reading through this. Since you insist on reading, I hope you enjoy your stay!
             </b></p>
-            <div class="w3-row">
-                <div class="w3-col m6 w3-center w3-padding-large">
-                    <p><b><i class="fa fa-user w3-margin-right"></i>Robien Marquez</b></p><br>
-                <img src="../images/aboutmepic.jpg" class="img-fluid w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="220" height="53">
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>Robien Marquez</b></p><br>
+                <img src="../images/aboutmepic.jpg" class="img-fluid w3-round w3-image w3-hover-opacity-off"
+                    alt="Photo of Me" width="220" height="53">
             </div>
-        
+
             <div class="w3-col m6 w3-padding-large">
-                <p><b>Welcome! My name is Robien Marquez. I like to build mobile applications. It's actually pretty crazy. I had no computer science
-                    background of any kind when I declared for the major my Sophomore year in college. The first time I was exposed to any kind of code
-                    was during my senior year in high school. I had a friend who was into games who made his own game. My curiousity instantly peaked.
-                    I wanted to see how exactly he made it, and he showed me some of the code he had written. Right then and there I decided to laearn more about it.
-                    However, I went into my Freshman year in college still Undecided as I was afraid of taking that leap. I finally decided to take that leap
-                    the year after and it has been a wonderful ride to say the least. 
-                </b></p>
+                <p><b>Welcome! My name is Robien Marquez. I like to build mobile applications. It's actually pretty
+                        crazy. I had no computer science
+                        background of any kind when I declared for the major my Sophomore year in college. The first
+                        time I was exposed to any kind of code
+                        was during my senior year in high school. I had a friend who was into games who made his own
+                        game. My curiousity instantly peaked.
+                        I wanted to see how exactly he made it, and he showed me some of the code he had written. Right
+                        then and there I decided to laearn more about it.
+                        However, I went into my Freshman year in college still Undecided as I was afraid of taking that
+                        leap. I finally decided to take that leap
+                        the year after and it has been a wonderful ride to say the least.
+                    </b></p>
             </div>
 
             <div class="w3-content w3-container w3-padding-64">
-                <p><b>My eyes have been opened to how powerful us developers truly are. We have the ability to change the world within our fingertips.
-                    The ppssibility of changing people's lives in a positive way should be something that every human being in this world should jump
-                    at the chance on. That's what I have decided to do. I may not be the best developer out there, not by a longshot. However, my relentless
-                    drive will more than make up for that.
-                </b></p>
+                <p><b>My eyes have been opened to how powerful us developers truly are. We have the ability to change
+                        the world within our fingertips.
+                        The ppssibility of changing people's lives in a positive way should be something that every
+                        human being in this world should jump
+                        at the chance on. That's what I have decided to do. I may not be the best developer out there,
+                        not by a longshot. However, my relentless
+                        drive will more than make up for that.
+                    </b></p>
 
-                <p><b>I am a big proponent of constant learning. That is what excites me about software development. If you are not learning, you are stagnant.
-                    Learning a new skills drives me everyday to be better. Not just in software development but in life in general. I will always continue to 
-                    learn and grow everyday. I will pass down that trait to my kids someday. 
-                </b></p>
+                <p><b>I am a big proponent of constant learning. That is what excites me about software development. If
+                        you are not learning, you are stagnant.
+                        Learning a new skills drives me everyday to be better. Not just in software development but in
+                        life in general. I will always continue to
+                        learn and grow everyday. I will pass down that trait to my kids someday.
+                    </b></p>
             </div>
         </div>
         <!-- End of Personal section -->
@@ -94,315 +113,300 @@
         <!-- Second Parallax Image with Education Text -->
         <div class="bgimg-2 w3-display-container w3-opacity-min" id="education">
             <div class="w3-display-middle" style="white-space:nowrap;">
-                <span class="img-fluid w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EDUCATION</span>
+                <span
+                    class="img-fluid w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EDUCATION</span>
             </div>
         </div>
 
         <!-- Container (Education Section) -->
         <div class="w3-content w3-container w3-padding-64" id="education">
-        
-        <!-- CSULB -->
-        <div class="w3-row">
-            <div class="w3-col m6 w3-center w3-padding-large">
-                <p><b><i class="fa fa-university w3-margin-right"></i>California State University, Long Beach</b></p><br>
-            <img src="../images/csulb_logo.jpg" class="img-fluid w3-round w3-image w3-hover-opacity-off" alt="College" width="220" height="53">
-        </div>
 
-        <!-- CSULB text (part 1) -->
-        <div class="w3-col m6 w3-padding-large">
-            <p><b>California State University Long Beach has now been my academic home for approximately 7 years. I graduated with a Bachelor of Science
-                in Computer Science in May 2016. I compiled a 3.22 GPA and made it to the Dean's List twice. I acknowledge that my GPA isn't anything special.
-                However, I earned every inch of that GPA. My relevant coursework include: Mobile Application Development, Intro to Software Engineering, 
-                Data Structures and Algorithms, Database Fundamentals, and a Senior Project Course. 
-            </b></p>
-        </div> 
-
-        <div class="w3-content w3-container w3-padding-64">
-            <p><b>I am currently working towards my Master's Degree in Computer Science with concentration in Software Development. I am on track to graduate
-                in May 2020. I currently have a 3.3 GPA. My relevant coursework include: Advanced Topics in Programming Languages, Advanced Data Structures and 
-                Algorithms, Advanced Software Engineering, Requirements Engineering, Software Testing and Verification, and Software Architecture. 
-            </b></p>
-        </div>
-
-        <!-- Banning High School image-->
-        <div class="w3-row">
-            <div class="w3-col m6 w3-center w3-padding-large">
-                <p><b><i class="fa fa-university w3-margin-right"></i>Banning High School</b></p><br>
-            <img src="../images/banninghs_logo.jpg" class="img-fluid w3-round w3-image w3-hover-opacity-off" alt="High School" width="220" height="53">
-        </div>
-
-        <!-- Banning High School text -->
-        <div class="w3-col m6 w3-padding-large">
-            <p><b>I went to Banning High School in Wilmington, CA from 2007 - 2011. Graduated with a High School Degree. GPA = I honestly don't remember.
-                The only relevant coursework I took here was AVID. AVID was a program that the high school had whose purpose was to get us "college-ready".
-                Unfortunately, there was no Computer Science course offered of any kind. That would have been nice. 
-            </b></p>
-        </div>
-
-        <div class="w3-content w3-container w3-padding-64"></div>  <!-- For padding purposes only -->
-
-        <!-- Carnegie Middle School image -->
-        <div class="w3-row">
-            <div class="w3-col m6 w3-center w3-padding-large">
-                <p><b><i class="fa fa-university w3-margin-right"></i>Andrew Carnegie Middle School</b></p><br>
-            <img src="../images/carnegiems_logo.jpg" class="img-fluid w3-round w3-image w3-hover-opacity-off" alt="Middle School" width="220" height="53">
-        </div>
-
-        <!-- Carnegie Middle School text -->
-        <div class="w3-col m6 w3-padding-large">
-            <p><b>I went to Andrew Carnegie Middle School in Carson, CA from 2004 - 2007. Nothing really of note to write about here. I made a lot of
-                friends that I still keep in touch with to this day. I graduated. That's about it.
-            </b></p>
-        </div>
-
-        <div class="w3-content w3-container w3-padding-64"></div>  <!-- For padding purposes only -->
-
-        <!-- Del Amo Elementary image -->
-        <div class="w3-row">
-            <div class="w3-col m6 w3-center w3-padding-large">
-                <p><b><i class="fa fa-university w3-margin-right"></i>Del Amo Elementary</b></p><br>
-            <img src="../images/delamo_logo.jpg" class="img-fluid w3-round w3-image w3-hover-opacity-off" alt="Elementary School" width="220" height="53">
-        </div>
-
-        <!-- Del Amo Elementary text -->
-        <div class="w3-col m6 w3-padding-large">
-            <p><b>I went to Del Amo Elementary School in Carson, CA on 2004. I spent 5th grade here, which was my first year here in the US coming from
-                the Philippines where I spent the first 10 years of my life. That one year was one of the best growing experiences of my life. I spoke
-                very little at first as my English wasn't great. It ended up as one of the most fun years of school I've had to this day.
-                <br><br>
-                **NOTE: Got a Perfect Attendance award here :D
-            </b></p>
-        </div>
-
-        <div class="w3-content w3-container w3-padding-64"></div>  <!-- For padding purposes only -->
-      
-        <!-- End of Education section -->
-
-        <br><br><br>
-      
-
-        <!-- Third Parallax with Technical Experience Text -->  
-        <div class="bgimg-3 w3-display-container w3-opacity-min" id="experience">
-            <div class="w3-display-middle" style="white-space:nowrap;">
-                <span class="img-fluid w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EXPERIENCE</span>
-            </div>
-        </div>
-
-        <!-- Container (Technical Experience Section) -->
-        <div class="w3-content w3-container w3-padding-64" id="experience-text">
-            <p><b>Throughout my college career, I have been exposed to a number of languages that include Java, Python, C++, C#, Haskell, Erlang, Prolog,
-                as well as Web Development languages like HTML, CSS and Javascript. I have learned to do backend work with PHP and using MySQL databases.
-                I have dabbled around with PHPMyAdmin as well. I recently have started using Google Firebase for my backend needs as it is very convenient
-                for Android.
-            </b></p>
-
-            <p><b>With all that said, my main interest lies in Mobile Development. I am most proficient in the Java programming language as well as the
-                Android SDK. I mostly develop using Scrum and Agile Methodologies. I have used this methodology for every project in my college career.
-                I have done app development through Native Android for the first have of my college career.
-            </b></p>
-
-            <p><b>However, I have recently gotten into Flutter. To put it in more honest terms, I <i>*stumbled*</i> upon Flutter while trying to develop 
-                an app using React Native. I never got into React as it was such a pain to set up. Flutter was much easier to do so. Additionally, the Dart 
-                programming language came easy to me and learned the basics within a week or so. I have developed 2 applications using the Flutter framework
-                and hope to find a job using this framework. However, I am looking for ANY Android Development position regardless of framework.
-            </b></p>
-
-            <p><b>Additionally, I am proficient with Git Version Control as I do this with all my personal projects. I have used Github as well as BitBucket.
-                I am well-versed in integrating third-party APIs into my apps. I have used Retrofit for JSON parsing. I have also uses the Postman software
-                along with Retrofit. 
-            </b></p>
-
-            <p><b>For more information about my personal projects and applications, feel free to go to my portfolio page from the homepage (from here, 
-                go to Home > Portflio).
-            </b></p>
-        </div>
-        <!-- End of Technical Experience section -->
-
-        <br><br>
-
-        <!-- Fourth Parallax Image with Interests Text -->
-        <div class="bgimg-4 w3-display-container w3-opacity-min" id="interests">
-            <div class="w3-display-middle" style="white-space:nowrap;">
-                <span class="img-fluid w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">INTERESTS</span>
-            </div>
-        </div>
-
-        <!-- Container (Interests Section) -->
-        <div class="w3-content w3-container w3-padding-64" id="interests-text">
-            <p><b>That beautiful image above? That's a sunset at Wrigley Field in Chicago, Illinois. Home of my beloved Chicago Cubs. A Cubs fan 
-                in Los Angeles, crazy right? I have been a Cubs fan since 2003. I was randomly flipping through the channels and seen Sammy Sosa at bat,
-                and the rest was history. That was the famous "Bartman" year when we came 5 outs from a World Series appearance until... that thing... 
-                happened. After years of frustration, in 2016, it finally happened.
-            </b></p>  
-
-            <br><br>
-
-            <!-- 2016 World Series last out video -->
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KAXl9Dtcz90" allowfullscreen></iframe>
-            </div>
-
-            <br><br>
-            
-            <p><b>That legendary call by Joe Buck will forever be etched onto my head for as long as I live. One of the happiest days of my life.
-                I kid you not, I was watching the game in my living room and I got down on my knees and started crying after the final out. What an
-                unbelievable feeling. I hope to see another World Series in my lifetime.
-            </b></p> 
-
-            <p><b>Additionally, I traveled to Chicago for 4 days and 3 nights with my beautiful girlfriend during the summer of 2019. It was truly 
-                a dream come true for someone who had been wanting to go to Chicago since I became a Cubs fan. I cannot thank my girlfriend enough
-                for making my dream a reality. We had the time of our lives. It inspired me to travel and see more of the world. Here's to more adventures!
-            </b></p> 
-            
-            <br><br>
-
-            <!-- Chicago trip carousel -->
-            <div id="carouselExampleIndicators" class="mx-auto carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                </ol>
-                <div class="carousel-inner mx auto">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="../images/hancockobservatory_meandgf.jpg" alt="Hancock Observatory">
-                        <div class="carousel-caption">
-                            <h4>John Hancock Center</h4>
-                            <p>Taken before standing on a tilted ledge. Scary, but a thrill!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="../images/chicagosunset.jpg" alt="Navy Pier">
-                        <div class="carousel-caption">
-                            <h4>Navy Pier</h4>
-                            <p>Taking in the breathtaking sunset. Later that night, we went on a cruise to see the fireworks in Lake Michigan.</p>
-                        </div> 
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="../images/chicagoatnight.jpg" alt="Night Skyline">
-                        <div class="carousel-caption">
-                            <h4>Sears Tower</h4>
-                            <p>I don't remember what floor we were in, but got a taste of the Chicago night skyline before standing on a glass ledge.</p>
-                        </div> 
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="../images/wrigleyfieldsign.jpg" alt="Wrigley Field">
-                        <div class="carousel-caption">
-                            <h4>Wrigley Field</h4>
-                            <p>Finally made my pilgrimage to the historic Wirgley Field. We lost 11-4 that night, but still had the time of my life.</p>
-                        </div> 
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="../images/thebean.jpg" alt="The Bean">
-                        <div class="carousel-caption">
-                            <h4>Millenium Park</h4>
-                            <p>The famous "Bean", one of many attractions in Millenium Park</p>
-                        </div> 
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="../images/melookingatskyline.jpg" alt="Day Skyline">
-                        <div class="carousel-caption">
-                            <h4>Looking Ahead</h4>
-                            <p>Looking at skyline in Sears Tower (Picture Credit: My Girlfriend, Viviana Ruiz)</p>
-                        </div>
-                    </div>
+            <!-- CSULB -->
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><b><i class="fa fa-university w3-margin-right"></i>California State University, Long Beach</b>
+                    </p><br>
+                    <img src="../images/csulb_logo.jpg" class="img-fluid w3-round w3-image w3-hover-opacity-off"
+                        alt="College" width="220" height="53">
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <!-- End of Chicago Carousel -->
 
-            <!-- Lakers section -->
-            <br><br>
-            
-            <p><b>Basketball was my first love. My dad taught me the game at a very young age. I considered myself a star player up until high school.
-                My skills have deteriorated since then. However, I still and will always love the game of basketball. BIG Laker fan. I remember the first
-                Lakers game I ever watched on TV was the NBA Finals in 2001 against the Philadelphia 76ers. I remember seeing Allen Iverson try to carry 
-                his team by himself against the Lakers who had Young Shaq and Kobe at the time. I remember how dominant they looked after dropping the first game,
-                and that's when I became a fan. And of course, being a Lakers fan in LA is a lot easier than being a Cubs fan.  
-            </b></p> 
+                <!-- CSULB text (part 1) -->
+                <div class="w3-col m6 w3-padding-large">
+                    <p><b>California State University Long Beach has now been my academic home for approximately 7
+                            years. I graduated with a Bachelor of Science
+                            in Computer Science in May 2016. I compiled a 3.22 GPA and made it to the Dean's List twice.
+                            I acknowledge that my GPA isn't anything special.
+                            However, I earned every inch of that GPA. My relevant coursework include: Mobile Application
+                            Development, Intro to Software Engineering,
+                            Data Structures and Algorithms, Database Fundamentals, and a Senior Project Course.
+                        </b></p>
+                </div>
 
-            <p><b>Championships came and went. However, the one that stood out the most was in 2010 against the Boston Celtics. We had already lost
-                the Finals against the same team 2 years back. That one hurt. We had one the championship the year after in 2009. That was sweet. But I knew
-                the Finals in 2010 was going to be much, much sweeter if we're able to avenge the loss 2 years ago. The series comes down to the 7th and 
-                final game. The game which produced this iconic image below.
-            </b></p> 
+                <div class="w3-content w3-container w3-padding-64">
+                    <p><b>I am currently working towards my Master's Degree in Computer Science with concentration in
+                            Software Development. I am on track to graduate
+                            in May 2020. I currently have a 3.3 GPA. My relevant coursework include: Advanced Topics in
+                            Programming Languages, Advanced Data Structures and
+                            Algorithms, Advanced Software Engineering, Requirements Engineering, Software Testing and
+                            Verification, and Software Architecture.
+                        </b></p>
+                </div>
 
-            <br><br>
+                <!-- Banning High School image-->
+                <div class="w3-row">
+                    <div class="w3-col m6 w3-center w3-padding-large">
+                        <p><b><i class="fa fa-university w3-margin-right"></i>Banning High School</b></p><br>
+                        <img src="../images/banninghs_logo.jpg" class="img-fluid w3-round w3-image w3-hover-opacity-off"
+                            alt="High School" width="220" height="53">
+                    </div>
 
-            <div class="lakers-2010 mx-auto">
-                <img class="d-block w-100" src="../images/lakers2010champs.jpg" alt="Lakers 2010 Champs">
-            </div>
+                    <!-- Banning High School text -->
+                    <div class="w3-col m6 w3-padding-large">
+                        <p><b>I went to Banning High School in Wilmington, CA from 2007 - 2011. Graduated with a High
+                                School Degree. GPA = I honestly don't remember.
+                                The only relevant coursework I took here was AVID. AVID was a program that the high
+                                school had whose purpose was to get us "college-ready".
+                                Unfortunately, there was no Computer Science course offered of any kind. That would have
+                                been nice.
+                            </b></p>
+                    </div>
 
-            <br><br>
+                    <div class="w3-content w3-container w3-padding-64"></div> <!-- For padding purposes only -->
 
-            <p><b>That was Kobe's 5th and final championship. Unfortunately, we haven't tasted a championship win since. there has been a lot of losing
-                for a few years now and it has gotten tiresome. Hopefully, we see a championship very soon. I might just be spoiled.
-            </b></p> 
+                    <!-- Carnegie Middle School image -->
+                    <div class="w3-row">
+                        <div class="w3-col m6 w3-center w3-padding-large">
+                            <p><b><i class="fa fa-university w3-margin-right"></i>Andrew Carnegie Middle School</b></p>
+                            <br>
+                            <img src="../images/carnegiems_logo.jpg"
+                                class="img-fluid w3-round w3-image w3-hover-opacity-off" alt="Middle School" width="220"
+                                height="53">
+                        </div>
 
-            <p><b>In my free time, I like to fire up my PS4 and play MLB The Show and NBA 2k (go figure). If I'm not doing that, you can catch me on 
-                my laptop working on a mobile app that I am currently developing, learning new frameworks and tools along the way. From reading articles,
-                watching YouTube tutorials, reading documentation, you name it. I also go to the gym a few times a month and play basketball at the park
-                (not as often as I used to). Also, as a result of my Chicago trip this summer, I would like to travel more in the near future.
-            </b></p> 
-        </div>
-        <!-- End of Interests section -->
+                        <!-- Carnegie Middle School text -->
+                        <div class="w3-col m6 w3-padding-large">
+                            <p><b>I went to Andrew Carnegie Middle School in Carson, CA from 2004 - 2007. Nothing really
+                                    of note to write about here. I made a lot of
+                                    friends that I still keep in touch with to this day. I graduated. That's about it.
+                                </b></p>
+                        </div>
 
-        <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-        
-        // Change style of navbar on scroll
-        window.onscroll = function() {myFunction()};
-        function myFunction() {
-            var navbar = document.getElementById("myNavbar");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-            } else {
-                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-            }
-        }
-        
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function toggleFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-        </script>
+                        <div class="w3-content w3-container w3-padding-64"></div> <!-- For padding purposes only -->
 
-        <footer id="sticky-footer" class="my-footer py-4 bg-dark text-white-50">
-            <div class="container text-center">
-                <small>Copyright &copy; robienmarquez.com</small>
-            </div>
-        </footer>
+                        <!-- Del Amo Elementary image -->
+                        <div class="w3-row">
+                            <div class="w3-col m6 w3-center w3-padding-large">
+                                <p><b><i class="fa fa-university w3-margin-right"></i>Del Amo Elementary</b></p><br>
+                                <img src="../images/delamo_logo.jpg"
+                                    class="img-fluid w3-round w3-image w3-hover-opacity-off" alt="Elementary School"
+                                    width="220" height="53">
+                            </div>
+
+                            <!-- Del Amo Elementary text -->
+                            <div class="w3-col m6 w3-padding-large">
+                                <p><b>I went to Del Amo Elementary School in Carson, CA on 2004. I spent 5th grade here,
+                                        which was my first year here in the US coming from
+                                        the Philippines where I spent the first 10 years of my life. That one year was
+                                        one of the best growing experiences of my life. I spoke
+                                        very little at first as my English wasn't great. It ended up as one of the most
+                                        fun years of school I've had to this day.
+                                        <br><br>
+                                        **NOTE: Got a Perfect Attendance award here :D
+                                    </b></p>
+                            </div>
+
+                            <div class="w3-content w3-container w3-padding-64"></div> <!-- For padding purposes only -->
+
+                            <!-- End of Education section -->
+
+                            <br><br><br>
 
 
-        <!-- Optional JavaScript-->
-        <!-- jQuery, Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
-        
-    </body>
+                            <!-- Third Parallax with Technical Experience Text -->
+                            <div class="bgimg-3 w3-display-container w3-opacity-min" id="experience">
+                                <div class="w3-display-middle" style="white-space:nowrap;">
+                                    <span
+                                        class="img-fluid w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EXPERIENCE</span>
+                                </div>
+                            </div>
 
-    
-    
+                            <!-- Container (Technical Experience Section) -->
+                            <div class="w3-content w3-container w3-padding-64" id="experience-text">
+                                <p><b>Throughout my college career, I have been exposed to a number of languages that
+                                        include Java, Python, C++, C#, Haskell, Erlang, Prolog,
+                                        as well as Web Development languages like HTML, CSS and Javascript. I have
+                                        learned to do backend work with PHP and using MySQL databases.
+                                        I have dabbled around with PHPMyAdmin as well. I recently have started using
+                                        Google Firebase for my backend needs as it is very convenient
+                                        for Android.
+                                    </b></p>
+
+                                <p><b>With all that said, my main interest lies in Mobile Development. I am most
+                                        proficient in the Java programming language as well as the
+                                        Android SDK. I mostly develop using Scrum and Agile Methodologies. I have used
+                                        this methodology for every project in my college career.
+                                        I have done app development through Native Android for the first have of my
+                                        college career.
+                                    </b></p>
+
+                                <p><b>However, I have recently gotten into Flutter. To put it in more honest terms, I
+                                        <i>*stumbled*</i> upon Flutter while trying to develop
+                                        an app using React Native. I never got into React as it was such a pain to set
+                                        up. Flutter was much easier to do so. Additionally, the Dart
+                                        programming language came easy to me and learned the basics within a week or so.
+                                        I have developed 2 applications using the Flutter framework
+                                        and hope to find a job using this framework. However, I am looking for ANY
+                                        Android Development position regardless of framework.
+                                    </b></p>
+
+                                <p><b>Additionally, I am proficient with Git Version Control as I do this with all my
+                                        personal projects. I have used Github as well as BitBucket.
+                                        I am well-versed in integrating third-party APIs into my apps. I have used
+                                        Retrofit for JSON parsing. I have also uses the Postman software
+                                        along with Retrofit.
+                                    </b></p>
+
+                                <p><b>For more information about my personal projects and applications, feel free to go
+                                        to my portfolio page from the homepage (from here,
+                                        go to Home > Portflio).
+                                    </b></p>
+                            </div>
+                            <!-- End of Technical Experience section -->
+
+                            <br><br>
+
+                            <!-- Fourth Parallax Image with Interests Text -->
+                            <div class="bgimg-4 w3-display-container w3-opacity-min" id="interests">
+                                <div class="w3-display-middle" style="white-space:nowrap;">
+                                    <span
+                                        class="img-fluid w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">INTERESTS</span>
+                                </div>
+                            </div>
+
+                            <!-- Container (Interests Section) -->
+                            <div class="w3-content w3-container w3-padding-64" id="interests-text">
+                                <p><b>That beautiful image above? That's a sunset at Wrigley Field in Chicago, Illinois.
+                                        Home of my beloved Chicago Cubs. A Cubs fan
+                                        in Los Angeles, crazy right? I have been a Cubs fan since 2003. I was randomly
+                                        flipping through the channels and seen Sammy Sosa at bat,
+                                        and the rest was history. That was the famous "Bartman" year when we came 5 outs
+                                        from a World Series appearance until... that thing...
+                                        happened. After years of frustration, in 2016, it finally happened.
+                                    </b></p>
+
+                                <br><br>
+
+                                <!-- 2016 World Series -->
+                                <p><b>November 2, 2016 will forever be etched onto my head for as long as
+                                        I live. One of the happiest days of my life.
+                                        I kid you not, I was watching the game in my living room and I got down on my
+                                        knees and started crying after the final out. What an
+                                        unbelievable feeling. I hope to see another World Series in my lifetime.
+                                    </b></p>
+
+                                <!-- Lakers section -->
+                                <br><br>
+
+                                <p><b>Basketball was my first love. My dad taught me the game at a very young age. I
+                                        considered myself a star player up until high school.
+                                        My skills have deteriorated since then. However, I still and will always love
+                                        the game of basketball. BIG Laker fan. I remember the first
+                                        Lakers game I ever watched on TV was the NBA Finals in 2001 against the
+                                        Philadelphia 76ers. I remember seeing Allen Iverson try to carry
+                                        his team by himself against the Lakers who had Young Shaq and Kobe at the time.
+                                        I remember how dominant they looked after dropping the first game,
+                                        and that's when I became a fan. And of course, being a Lakers fan in LA is a lot
+                                        easier than being a Cubs fan.
+                                    </b></p>
+
+                                <p><b>Championships came and went. However, the one that stood out the most was in 2010
+                                        against the Boston Celtics. We had already lost
+                                        the Finals against the same team 2 years back. That one hurt. We had one the
+                                        championship the year after in 2009. That was sweet. But I knew
+                                        the Finals in 2010 was going to be much, much sweeter if we're able to avenge
+                                        the loss 2 years ago. The series comes down to the 7th and
+                                        final game. The game which produced this iconic image below.
+                                    </b></p>
+
+                                <br><br>
+
+                                <div class="lakers-2010 mx-auto">
+                                    <img class="d-block w-100" src="../images/lakers2010champs.jpg"
+                                        alt="Lakers 2010 Champs">
+                                </div>
+
+                                <br><br>
+
+                                <p><b>That was Kobe's 5th and final championship. Unfortunately, we haven't tasted a
+                                        championship win since. there has been a lot of losing
+                                        for a few years now and it has gotten tiresome. Hopefully, we see a championship
+                                        very soon. I might just be spoiled.
+                                    </b></p>
+
+                                <p><b>In my free time, I like to fire up my PS4 and play MLB The Show and NBA 2k (go
+                                        figure). If I'm not doing that, you can catch me on
+                                        my laptop working on a mobile app that I am currently developing, learning new
+                                        frameworks and tools along the way. From reading articles,
+                                        watching YouTube tutorials, reading documentation, you name it. I also go to the
+                                        gym a few times a month and play basketball at the park
+                                        (not as often as I used to). Also, as a result of my Chicago trip this summer, I
+                                        would like to travel more in the near future.
+                                    </b></p>
+                            </div>
+                            <!-- End of Interests section -->
+
+                            <script>
+                                // Modal Image Gallery
+                                function onClick(element) {
+                                    document.getElementById("img01").src = element.src;
+                                    document.getElementById("modal01").style.display = "block";
+                                    var captionText = document.getElementById("caption");
+                                    captionText.innerHTML = element.alt;
+                                }
+
+                                // Change style of navbar on scroll
+                                window.onscroll = function () { myFunction() };
+                                function myFunction() {
+                                    var navbar = document.getElementById("myNavbar");
+                                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                                        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+                                    } else {
+                                        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+                                    }
+                                }
+
+                                // Used to toggle the menu on small screens when clicking on the menu button
+                                function toggleFunction() {
+                                    var x = document.getElementById("navDemo");
+                                    if (x.className.indexOf("w3-show") == -1) {
+                                        x.className += " w3-show";
+                                    } else {
+                                        x.className = x.className.replace(" w3-show", "");
+                                    }
+                                }
+                            </script>
+
+                            <footer id="sticky-footer" class="my-footer py-4 bg-dark text-white-50">
+                                <div class="container text-center">
+                                    <small>Copyright &copy; robienmarquez.com</small>
+                                </div>
+                            </footer>
+
+
+                            <!-- Optional JavaScript-->
+                            <!-- jQuery, Popper.js, then Bootstrap JS -->
+                            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                                crossorigin="anonymous"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                                crossorigin="anonymous"></script>
+                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                                crossorigin="anonymous"></script>
+
+</body>
+
+
+
 </html>
